@@ -1,20 +1,19 @@
-#include<stdio.h>
-int max(int a, int b);
-int main()
-{
-    int x, y,m;
-    puts("Enter two numbers to find max: ");
-    scanf("%d", &x);
-    scanf("%d", &y);
-    m = max(x, y);
-    printf("The max of %d and %d is %d", x, y, m);
-    return 0;
-}
+/*calculate the triangle's area*/
 
-int max(int a,int b)
+#include <stdio.h>
+#include <math.h>
+
+void main()
 {
-    if(a>b)
-        return a;
-    else
-        return b;
+    float x1=0, y1=0, x2=17, y2=10.3, x3=-5.2, y3=5.1;
+    float a, b, c; 
+    float p, area;
+    
+    a = sqrt((x1-x2) * (x1-x2) + (y1-y2) * (y1-y2));
+    b = sqrt((x1-x3) * (x1-x3) + (y1-y3) * (y1-y3));
+    c = sqrt((x2-x3) * (x2-x3) + (y2-y3) * (y2-y3));
+
+    p=(a+b+c)/2;
+    area=sqrt(p*(p-a)*(p-b)*(p-c));
+    printf("%f\n", area);
 }
