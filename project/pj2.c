@@ -1,9 +1,3 @@
-/*
-Program: Library Management
-Author: CppBuzz
-Date: 17th Nov 2017
-*/
-
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
@@ -33,7 +27,6 @@ int main()
         scanf("%d",&j);
         switch (j)
         {
-        /* Add book */
             case 1:  
             printf ("Enter book name = ");
             scanf ("%s",l[i].bk_name);
