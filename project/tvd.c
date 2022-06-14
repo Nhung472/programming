@@ -2,7 +2,6 @@
 #include<conio.h>
 #include<stdlib.h>
 #include<string.h>
-
 struct library
 {
     char bk_name[30];
@@ -17,7 +16,6 @@ int main()
     char ar_nm[30],bk_nm[30];
     int i,j, keepcount;
     i=j=keepcount = 0;
-
     while(j!=6)
     {
         printf("\n\n1. Add book information\n2. Display book information\n");
@@ -25,13 +23,10 @@ int main()
         printf("4. List the title of specified book\n");
         printf("5. List the count of books in the library\n");
         printf("6. Exit");
-
         printf ("\n\nEnter one of the above : ");
         scanf("%d",&j);
-
         switch (j)
         {
-        /* Add book */
         case 1:  
         printf ("Enter book name = ");
         scanf ("%s",l[i].bk_name);
@@ -43,7 +38,6 @@ int main()
         scanf ("%f",&l[i].price);
         keepcount++;
         break;
-
         case 2:
         printf("you have entered the following information\n");
         for(i=0; i<keepcount; i++)
@@ -54,7 +48,6 @@ int main()
             printf ("\t  price = %f",l[i].price);
         }
         break;
-
         case 3:
         printf ("Enter author name : ");
         scanf ("%s",ar_nm);
@@ -64,7 +57,6 @@ int main()
             printf ("%s %s %d %f",l[i].bk_name,l[i].author,l[i].pages,l[i].price);
         }
         break;
-
         case 4:
         printf ("Enter book name : ");
         scanf ("%s",bk_nm);
